@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApplication</string>
+    <string name="search">"City Name"</string>
+    <string name="temperature_format">%1$s°C</string>
+    <string name="city">"Enter City"</string>
+    <string name="retry">"Retry"</string>
+</resources>
