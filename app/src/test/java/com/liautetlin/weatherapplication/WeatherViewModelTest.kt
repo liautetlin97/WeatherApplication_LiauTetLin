@@ -37,13 +37,12 @@ class WeatherViewModelTest {
     fun `test fetchWeather success`() = runTest {
         val weatherResponse = WeatherResponse(
             name = "City",
-            main = Main(temp = 25.0),
-            weather = listOf(Weather(description = "clear sky"))
+            main = Main(temp = 25.0, humidity = 65.0, pressure = 1012, feelsLike = 25.0),
+            weather = listOf(Weather(description = "clear sky", icon = "11d")),Wind(speed = 15.0),
         )
+        coEvery { weatherService.getWeather("Selangor") } returns weatherResponse
 
-        coEvery { weatherService.getWeather("Malaysia") } returns weatherResponse
-
-        viewModel.fetchWeather("Malaysia")
+        viewModel.fetchWeather("Selangor")
 
         assert(viewModel.state.value is WeatherState.Success)
         val successState = viewModel.state.value as WeatherState.Success

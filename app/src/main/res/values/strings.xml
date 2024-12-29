@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">WeatherApplication</string>
     <string name="search">"City Name"</string>
-    <string name="temperature_format">%1$s°C</string>
+    <string name="temperature_format">%1$s °C</string>
+    <string name="pressure_format">%1$d hPa</string>
+    <string name="windSpeed_format">%1$s km/h</string>
+    <string name="humidity_format">%d%%</string>
     <string name="city">"Enter City"</string>
     <string name="retry">"Retry"</string>
+    <string name="weather_image_url">https://openweathermap.org/img/wn/%1$s@4x.png</string>
+    <string name="feels_like">Feels Like</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="pressure">Pressure</string>
 </resources>
