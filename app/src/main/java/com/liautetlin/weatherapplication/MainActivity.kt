@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
 fun WeatherApp(viewModel: WeatherViewModel) {
     LockScreenOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
     val weatherState = viewModel.state.collectAsState().value
-    val cityName = remember { mutableStateOf(TextFieldValue("Lon")) }
+    val cityName = remember { mutableStateOf(TextFieldValue("")) }
     val focusManager = LocalFocusManager.current
     val searchClicked = remember { mutableStateOf(false) }
     val screenHeight = LocalConfiguration.current.screenHeightDp.dp
