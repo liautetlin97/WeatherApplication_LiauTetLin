@@ -1,5 +1,5 @@
 1. Description: Build a simple weather app that fetches the current weather for a city.
-2.Key Features:
+2. Key Features:
  - API Integration: Fetch data from an open API like OpenWeatherMap.
  - Search Bar: Allow users to search for a city.
  - State Handling: Use Flow for reactive state updates.
