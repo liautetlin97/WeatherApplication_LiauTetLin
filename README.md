@@ -1,3 +1,5 @@
+![demo_weatherApp](https://github.com/user-attachments/assets/0ff994da-2d8b-4b6d-970e-800a51ec9dc8)
+
 1. Description: Build a simple weather app that fetches the current weather for a city.
 2. Key Features:
  - API Integration: Fetch data from an open API like OpenWeatherMap.
